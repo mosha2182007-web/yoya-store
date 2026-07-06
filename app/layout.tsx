@@ -1,9 +1,16 @@
+import "./globals.css";
+import { ReactNode } from "react";
+
 export const metadata = {
-  title: 'يويا لمحاربة الغلاء',
-  description: 'أفضل المنتجات وأدوات المكتب بأسعار تنافسية لمحاربة الغلاء - تسوق الآن من متجر يويا.',
+  title: "YOYA WORLD",
+  description: "YOYA WORLD",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
     <html lang="ar" dir="rtl">
       <body>{children}</body>
